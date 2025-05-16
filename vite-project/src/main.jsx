@@ -1,21 +1,22 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import ReactDOM from "react-dom/client";
 
+import ReactDOM from "react-dom/client";
+import { Outlet } from "react-router-dom";
 import './index.css'
 import Body from "./Body.jsx";
-import { RouterProvider} from "react-router";
-
+import { RouterProvider} from "react-router-dom";
+import Error from "./Error.jsx";
 
 
 import { createBrowserRouter} from "react-router";
+import Header from "./Header.jsx";
 
 
 
 const Applayout = () =>{
     return (
 <div className="flex flex-col">
-      <Body/>
+    <Header/>
+    <Outlet/>
 </div>
     )
 };
