@@ -3,6 +3,8 @@ import { Link } from "react-router-dom"
 import { BsGithub } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
+import { AiFillCopyrightCircle } from "react-icons/ai";
+
 
 const Body = () => {
     return (
@@ -22,11 +24,15 @@ const Body = () => {
                              justify-center w-[200px] h-[50px] mx-auto hover:bg-teal-400"> <Link to="" className="flex items-center">
                 Download CV <HiOutlineExternalLink className="ml-4"/></Link>
             </div>
-            <div className="flex items-center space-x-10 justify-between mt-20 text-3xl text-teal-400 max-w-[300px ] mx-auto">
-                <div> <BsGithub  className="hover:text-gray-300"/>
+            <div className=" items-center space-x-10  text-3xl text-teal-400 max-w-[300px ] mx-auto">
+                <div className="flex items-center space-x-10 justify-between mt-20"> <BsGithub  className="hover:text-gray-300"/>
                 <FaLinkedin  className="hover:text-gray-300" />
                 <AiFillMail   className="hover:text-gray-300"/></div>
                
+
+               <div className="text-sm items-center flex mt-20 p-4 text-center  font-thin space-x-2"> 
+                <AiFillCopyrightCircle />
+                <span className="">2025 </span> <span> Kanimozhi</span> </div>
             </div>
         </div>
     )
