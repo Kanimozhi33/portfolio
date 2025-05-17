@@ -5,7 +5,7 @@ import './index.css'
 import Body from "./Body.jsx";
 import { RouterProvider} from "react-router-dom";
 import Error from "./Error.jsx";
-
+import About from "./About.jsx";
 
 import { createBrowserRouter} from "react-router";
 import Header from "./Header.jsx";
@@ -31,7 +31,8 @@ const routing = createBrowserRouter([
                 path: "/",
                 element: <Body/>},
             {
-
+                path:"/about",
+                element: <About/>
             }
 ],
         errorElement: <Error/>}
