@@ -33,7 +33,7 @@ const Contact = () =>{
                 </div>
                 <div className="p-10 font-oswald max-w-[950px]">
                     <h1 className="text-teal-500 text-3xl">Coffee With Me</h1>
-                    <p className="text-gray-300 text-center text-2xl">Let's connect! Whether you're looking to collaborate on a project,
+                    <p className="text-gray-300 text-center text-2xl mt-5">Let's connect! Whether you're looking to collaborate on a project,
                             discuss ideas, or just have a casual chat about tech, design, or life. 
                             Feel free to reach out.</p>
                     <div className="rounded-2xl border mx-auto mt-20 items-center max-w-[150px] text-teal-400 border-teal-400 flex text-center hover:bg-teal-400 hover:text-black justify-center">

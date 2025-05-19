@@ -3,8 +3,22 @@
 @tailwind components;
 @tailwind utilities; */
 
+.content-div {
+  opacity: 0; /* Initially hidden */
+}
 
+.content-div.active {
+  animation: fadeIn 0.3s ease-in-out forwards; /* Apply the fadeIn animation */
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 
 

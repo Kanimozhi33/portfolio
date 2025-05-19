@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 const Body = () => {
     return (
-        <div className="flex flex-col  bg-black font-kanit min-h-screen">
+        <div className="flex flex-col  bg-black font-kanit min-h-[400px] ">
             <div className="text-center text-gray-300 mt-20 font-bold">
                 <h1 className="text-xl">Software Engineer</h1>
                 <p className="text-5xl">Hello I'm <span className="text-teal-400">Kanimozhi VM</span></p>
