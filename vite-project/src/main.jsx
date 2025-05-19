@@ -6,10 +6,10 @@ import Body from "./Body.jsx";
 import { RouterProvider} from "react-router-dom";
 import Error from "./Error.jsx";
 import About from "./About.jsx";
-
+import Footer from "./Footer.jsx";
 import { createBrowserRouter} from "react-router";
 import Header from "./Header.jsx";
-
+import Contact from "./Contact.jsx";
 
 
 const Applayout = () =>{
@@ -17,6 +17,7 @@ const Applayout = () =>{
 <div className="flex flex-col">
     <Header/>
     <Outlet/>
+    <Footer/>
 </div>
     )
 };
@@ -33,7 +34,11 @@ const routing = createBrowserRouter([
             {
                 path:"/about",
                 element: <About/>
-            }
+            },
+            {
+                path:"/contact",
+                element:<Contact/>
+            },
 ],
         errorElement: <Error/>}
 ])

@@ -8,6 +8,10 @@ module.exports = {
     extend: {
       fontFamily:{
         'kanit':['Kanit', 'sans-serif'],
+        'bebas': ["Bebas Neue", 'sans-serif'],
+        'libre': ['Libre Baskerville', 'serif'],
+        'caveat': ['caveat','cursive'],
+        'oswald':["Oswald", 'sans-serif']
       }
     },
   },
