@@ -23,11 +23,11 @@ setActiveContent(id);
 };
 
 return (
-<div className="bg-black  py-16 flex justify-center items-center md:flex-row my-auto px-20">
-<div className="container mx-auto px-4 md:px-8">
-<div className="flex flex-col md:flex-row gap-10">
+<div className="bg-black  py-16 justify-center items-center  my-auto px-20">
+<div className="container mx-auto px-4  md:px-8">
+<div className="flex  flex-col md:flex-row justify-center gap-10">
 {/* Navigation Links */}
-<div className="md:w-1/4 flex flex-col items-center md:items-start">
+<div className="md:w-1/4 flex flex-col items-center ">
 <div className="bg-gray-800 rounded-lg shadow-md p-4 md:p-6 w-full">
 <h2 className="font-bebas text-3xl text-teal-400 mb-4 text-center md:text-left">
 Explore
@@ -62,7 +62,7 @@ About Me
 </div>
 
       {/* Content Area */}
-      <div className="md:w-3/4">
+      <div className="md:w-2/4  ">
         {activeContent === "education" && (
           <div id="education" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8">
             <h2 className="font-oswald text-3xl text-teal-400 font-bold mb-6">My Education</h2>

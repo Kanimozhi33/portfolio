@@ -1,47 +1,75 @@
-import { IoCall } from "react-icons/io5";
-import { LuMapPinHouse } from "react-icons/lu";
+import { IoCall, IoLocationSharp } from "react-icons/io5"; // Changed LuMapPinHouse to IoLocationSharp for consistency and common use
 import { AiFillMail } from "react-icons/ai";
-import { MAIL} from "./Constant";
+import { MAIL } from "./Constant";
 
+const Contact = () => {
+  return (
+    <div className="bg-gradient-to-br from-gray-950 to-black text-white min-h-screen py-16 px-4">
+      <div className="container mx-auto max-w-6xl">
+        <h1 className="text-5xl font-oswald text-center text-teal-400 mb-12 drop-shadow-lg">
+          Get in Touch
+        </h1>
 
-const Contact = () =>{
-    return (
-
-            <div  class="content-div pt-10 flex md:flex-col bg-black">
-                <div className="text-2xl font-oswald space-y-3 p-10">
-                    <span className="flex space-x-2">
-                        <IoCall className="text-teal-400"/><ul>
-                            <li className="text-gray-500">Phone</li>
-                            <li className="text-gray-300">+91 84891 35208</li>
-                        </ul>
-                    </span>
-                    
-                    <span className="flex space-x-2">
-                        <AiFillMail className="text-teal-400" /><ul>
-                            <li className="text-gray-500">
-                                Mail
-                            </li >
-                            <li className="text-gray-300">kanimozhi9033vm@gmail.com</li>
-                        </ul>
-                    </span>
-                    <span className="flex space-x-2">
-                        <LuMapPinHouse className="text-teal-400"/><ul>
-                            <li className="text-gray-500">Address</li>
-                            <li className="text-gray-300">Coonoor, The Nilgiris.</li>
-                        </ul>
-                    </span>
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-12">
+          {/* Contact Information Section */}
+          <div className="bg-gray-800 p-8 rounded-xl shadow-2xl flex-1 flex flex-col justify-around">
+            <h2 className="text-3xl font-oswald text-teal-400 mb-8 text-center md:text-left">
+              Contact Info
+            </h2>
+            <div className="space-y-8">
+              <span className="flex items-center space-x-4">
+                <IoCall className="text-4xl text-teal-400 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg text-gray-400 font-semibold">Phone</h3>
+                  <a href="tel:+918489135208" className="text-gray-200 text-xl hover:text-teal-300 transition-colors duration-300">
+                    +91 84891 35208
+                  </a>
                 </div>
-                <div className="p-10 font-oswald max-w-[950px]">
-                    <h1 className="text-teal-500 text-3xl">Coffee With Me</h1>
-                    <p className="text-gray-300 text-center text-2xl mt-5">Let's connect! Whether you're looking to collaborate on a project,
-                            discuss ideas, or just have a casual chat about tech, design, or life. 
-                            Feel free to reach out.</p>
-                    <div className="rounded-2xl border mx-auto mt-20 items-center max-w-[150px] text-teal-400 border-teal-400 flex text-center hover:bg-teal-400 hover:text-black justify-center">
-                    <a href={MAIL}><span className="font-bebas  flex text-xl p-3">SAY HI! <AiFillMail className="ml-3 "/></span></a>
-                    
-                    </div>
-                </div></div>
-    
-)};
+              </span>
+
+              <span className="flex items-center space-x-4">
+                <AiFillMail className="text-4xl text-teal-400 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg text-gray-400 font-semibold">Mail</h3>
+                  <a href={`mailto:${MAIL}`} className="text-gray-200 text-xl hover:text-teal-300 transition-colors duration-300">
+                    {MAIL}
+                  </a>
+                </div>
+              </span>
+
+              <span className="flex items-center space-x-4">
+                <IoLocationSharp className="text-4xl text-teal-400 flex-shrink-0" />
+                <div>
+                  <h3 className="text-lg text-gray-400 font-semibold">Address</h3>
+                  <p className="text-gray-200 text-xl">Coonoor, The Nilgiris, India</p>
+                </div>
+              </span>
+            </div>
+          </div>
+
+          {/* Call to Action / Message Section */}
+          <div className="bg-gray-800 p-8 rounded-xl shadow-2xl flex-1 flex flex-col justify-center items-center text-center">
+            <h2 className="text-4xl font-oswald text-teal-400 mb-6 drop-shadow-lg">
+              Coffee With Me
+            </h2>
+            <p className="text-gray-300 text-xl md:text-2xl leading-relaxed mb-10">
+              Let's connect! Whether you're looking to collaborate on a project,
+              discuss ideas, or just have a casual chat about tech, design, or life.
+              Feel free to reach out.
+            </p>
+            <div className="animate-pulse-slow"> {/* Added pulsing animation */}
+              <a
+                href={`mailto:${MAIL}`}
+                className="inline-flex items-center justify-center bg-teal-600 text-white font-bebas tracking-wide text-2xl px-8 py-4 rounded-full hover:bg-teal-500 transition-all duration-300 ease-in-out transform hover:scale-105 shadow-lg"
+              >
+                SAY HI! <AiFillMail className="ml-3 text-3xl" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Contact;

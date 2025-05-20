@@ -9,9 +9,9 @@ import { LiaProjectDiagramSolid } from "react-icons/lia";
 
 const Header = () =>{
     return (
-        <div className="flex bg-black font-caveat justify-between w-full h-[100px] items-center">
+        <div className="flex bg-black xl:py-12 font-caveat justify-between w-full h-[100px] items-center ">
             <div className="name font-bold text-4xl p-10 ml-20 mt-10 text-teal-400 hover:text-gray-300">
-                <Link to="/">kanimozhi
+                <Link to="/">kanimozhi<span>.</span>
                 </Link>
                 
             </div>
