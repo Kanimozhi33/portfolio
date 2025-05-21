@@ -23,8 +23,8 @@ setActiveContent(id);
 };
 
 return (
-<div className="bg-black  py-16 justify-center items-center  my-auto px-20">
-<div className="container mx-auto px-4  md:px-8">
+<div className="bg-black min-h-[730px]  py-16 justify-center items-center  my-auto px-20 transition-all duration-200  ">
+<div className="container mx-auto px-4 opacity-0 animate-in-1 md:px-8">
 <div className="flex  flex-col md:flex-row justify-center gap-10">
 {/* Navigation Links */}
 <div className="md:w-1/4 flex flex-col items-center ">
@@ -32,28 +32,28 @@ return (
 <h2 className="font-bebas text-3xl text-teal-400 mb-4 text-center md:text-left">
 Explore
 </h2>
-<div className="flex flex-col space-y-2">
+<div className="flex flex-col md:text-sm space-y-2 opacity-0 animate-in-2">
 <button
 onClick={() => handleLinkClick("education")}
-className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${ activeContent === "education" ? "bg-teal-500" : "bg-gray-700 hover:bg-gray-600" }`}
+className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${ activeContent === "education" ? "bg-teal-500 transition-colors transform duration-300" : "bg-gray-700 hover:bg-gray-600" }`}
 >
 Education
 </button>
 <button
 onClick={() => handleLinkClick("skills")}
-className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${activeContent === "skills" ? "bg-teal-500" : "bg-gray-700 hover:bg-gray-600"}`}
+className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${activeContent === "skills" ? "bg-teal-500 transition-colors transform duration-300" : "bg-gray-700 hover:bg-gray-600"}`}
 >
 Skills
 </button>
 <button
 onClick={() => handleLinkClick("experience")}
-className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${ activeContent === "experience" ? "bg-teal-500" : "bg-gray-700 hover:bg-gray-600" }`}
+className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer  text-gray-200 ${ activeContent === "experience" ? "bg-teal-500 transition-colors transform duration-300" : "bg-gray-700 hover:bg-gray-600" }`}
 >
 Experience
 </button>
 <button
 onClick={() => handleLinkClick("about-me")}
-className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${ activeContent === "about-me" ? "bg-teal-500" : "bg-gray-700 hover:bg-gray-600" }`}
+className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${ activeContent === "about-me" ? "bg-teal-500 transition-colors transform duration-300" : "bg-gray-700 hover:bg-gray-600" }`}
 >
 About Me
 </button>
@@ -64,7 +64,7 @@ About Me
       {/* Content Area */}
       <div className="md:w-2/4  ">
         {activeContent === "education" && (
-          <div id="education" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8">
+          <div id="education" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8 opacity-0 animate-in-2">
             <h2 className="font-oswald text-3xl text-teal-400 font-bold mb-6">My Education</h2>
             <p className="text-gray-300 text-lg mb-4">Educational details are given below:</p>
             <div className="bg-gray-700 rounded-lg p-5 mb-6">
@@ -87,7 +87,7 @@ About Me
         )}
 
         {activeContent === "skills" && (
-          <div id="skills" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8">
+          <div id="skills" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8 opacity-0 animate-in-2">
             <h2 className="font-oswald text-3xl text-teal-400 font-bold mb-6">My Skills</h2>
             <p className="text-gray-300 text-lg mb-6">My skills include:</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-5xl md:text-6xl">
@@ -129,7 +129,7 @@ About Me
         )}
 
         {activeContent === "experience" && (
-          <div id="experience" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8">
+          <div id="experience" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8 opacity-0 animate-in-2">
             <h2 className="font-oswald text-3xl text-teal-400 font-bold mb-6">My Experience</h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
               Driven by a keen interest in technology and problem-solving, I've embarked on a journey to
@@ -142,7 +142,7 @@ About Me
         )}
 
         {activeContent === "about-me" && (
-          <div id="about-me" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8">
+          <div id="about-me" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8 opacity-0 animate-in-2">
             <h2 className="font-bebas text-3xl text-teal-400 font-bold mb-6">About Me</h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
               Hi, I am a frontend developer with a love for crafting sleek web experiences. Outside of

@@ -9,7 +9,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear(); // Get current year dynamically
 
   return (
-    <div className="bg-gradient-to-r from-gray-900 to-black text-white py-10 ">
+    <div className="bg-black text-white py-10 ">
       <div className="container mx-auto px-4">
         {/* Social Icons Section */}
         <div className="flex justify-center space-x-8 text-4xl mb-8">

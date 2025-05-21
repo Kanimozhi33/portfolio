@@ -10,7 +10,7 @@ import Footer from "./Footer.jsx";
 import { createBrowserRouter} from "react-router";
 import Header from "./Header.jsx";
 import Contact from "./Contact.jsx";
-
+import Projects from "./Projects.jsx";
 
 const Applayout = () =>{
     return (
@@ -38,6 +38,10 @@ const routing = createBrowserRouter([
             {
                 path:"/contact",
                 element:<Contact/>
+            },
+            {
+                path:"/projects",
+                element:<Projects/>
             },
 ],
         errorElement: <Error/>}
