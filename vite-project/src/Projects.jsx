@@ -4,14 +4,20 @@ import { BsGithub } from "react-icons/bs";
 const Projects = ()=>{
     return (
         <div class="whole-div bg-black">
+            <div className=" space-x-20 p-20">
+            
             <div className="img bg-white h-[500px] mt-10 w-[800px] justify-center items-center mx-auto">
-                        img
+                      img
+            </div>
+            <div className=" text-center mt-5 justify-between items-center space-x-4">
+            <button className="bg-teal-400 text-center justify-center  items-center mt-10 h-[50px] rounded-xl font-oswald hover:text-xl transform transition-all duration-150 p-4">previous</button> 
+            <button className="bg-teal-400 text-center justify-center  items-center mt-10 h-[50px] rounded-xl font-oswald hover:text-xl transform transition-all duration-150 p-4">next</button></div>
             </div>
             <div className="text-gray-600 mt-10 flex">
                 <div>
-                    <h1 className="font-oswald text-9xl p-5">01</h1>
+                    <h1 className="font-oswald text-9xl p-10 ml-10">01</h1>
                 </div>
-                <div className="ml-10 justify-center items-center p-10">
+                <div className=" justify-center items-center p-10">
                     <h2 className="text-teal-400 text-2xl font-bebas">MEAL MINIT</h2>
                     <h2 className=" text-xl">This is an Online Food Ordering application</h2>
                     <p>React, Javascript, Tailwind Css, Redux</p>
