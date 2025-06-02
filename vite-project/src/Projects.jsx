@@ -3,35 +3,32 @@ import { BsGithub } from "react-icons/bs";
 
 import ImageCarousal from "./ImageCarousal";
 
-const images = [
-    {id:1, src:"", alt:"01"},
-    {id:2, src:"", alt:"02"},
-    {id:3, src:"", alt:"03"}
-]
 
+const projectData = {
+    id:1,
+    name:"MEAL MINIT",
+    description:"This is an Online Food Ordering application",
+    techStack:"React, Javascript, Tailwind Css, Redux",
+    images:[
+    {id:1, src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5A0h-4DPOFKFh1p2JW3Brs1nkJ3cIBOTsvw&s", alt:"01"},
+    {id:2, src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStaIiFIfdlnXsHlqt_elPP_jDuDNPxvZeIKA&s", alt:"02"},
+    {id:3, src:"https://telefe-static.akamaized.net/media/18244314/tlf_edayserkan_eda.jpg?width=600&height=500&mode=crop&anchor=top", alt:"03"}
+],
+}
 const Projects = ()=>{
 
 
-    const currImage = images[0];
+    const currProject = projectData;
+
 
     return (
-        <div class="whole-div bg-black">
-            <div>
-                <ImageCarousal images={images}/>
+        <div className="whole-div bg-black">
+            <div className="rounded-2xl">
+                <ImageCarousal images={currProject.images} name={currProject.name} description={currProject.description}
+                techStack={currProject.techStack}/>
             </div>
             
-            <div className="text-gray-600 mt-10 flex">
-                <div>
-                    <h1 className="font-oswald text-9xl p-10 ml-10">01</h1>
-                </div>
-                <div className=" justify-center items-center p-10">
-                    <h2 className="text-teal-400 text-2xl font-bebas">MEAL MINIT</h2>
-                    <h2 className=" text-xl">This is an Online Food Ordering application</h2>
-                    <p>React, Javascript, Tailwind Css, Redux</p>
-                </div>
-                
-
-            </div>
+            
             <div className="text-gray-400 ">
                 <hr className="text-gray-500 opacity-50 text-4xl"></hr>
                 <div className="flex  text-3xl space-x-4 p-8"><a href="" ><FiExternalLink /></a>
