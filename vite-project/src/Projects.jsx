@@ -1,5 +1,11 @@
 import { FiExternalLink } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
+import ss_1 from "./assets/images/ss_1.png";
+import ss_2 from "./assets/images/ss_2.png";
+import ss_3 from "./assets/images/ss_3.png";
+import ss_4 from "./assets/images/ss_4.png";
+import ss_5 from "./assets/images/ss_5.png";
+import ss_6 from "./assets/images/ss_6.png";
 
 import ImageCarousal from "./ImageCarousal";
 
@@ -10,9 +16,11 @@ const projectData = {
     description:"This is an Online Food Ordering application",
     techStack:"React, Javascript, Tailwind Css, Redux",
     images:[
-    {id:1, src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5A0h-4DPOFKFh1p2JW3Brs1nkJ3cIBOTsvw&s", alt:"01"},
-    {id:2, src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStaIiFIfdlnXsHlqt_elPP_jDuDNPxvZeIKA&s", alt:"02"},
-    {id:3, src:"https://telefe-static.akamaized.net/media/18244314/tlf_edayserkan_eda.jpg?width=600&height=500&mode=crop&anchor=top", alt:"03"}
+    {id:1, src:ss_1, alt:"Home page"},
+    {id:2, src:ss_2, alt:"Restaurant menu"},
+    {id:3, src:ss_6, alt:"items"},
+    {id:4, src:ss_5, alt:"cart page"},
+    {id:5, src:ss_4, alt:"about page"}
 ],
 }
 const Projects = ()=>{

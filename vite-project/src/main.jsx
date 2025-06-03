@@ -14,7 +14,7 @@ import Projects from "./Projects.jsx";
 
 const Applayout = () =>{
     return (
-<div className="flex flex-col">
+<div className="flex flex-col overflow-x-hidden">
     <Header/>
     <Outlet/>
     <Footer/>
