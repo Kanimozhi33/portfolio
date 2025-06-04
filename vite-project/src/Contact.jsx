@@ -1,4 +1,4 @@
-import { IoCall, IoLocationSharp } from "react-icons/io5"; // Changed LuMapPinHouse to IoLocationSharp for consistency and common use
+import { IoCall, IoLocationSharp } from "react-icons/io5"; 
 import { AiFillMail } from "react-icons/ai";
 import { MAIL } from "./Constant";
 
@@ -11,7 +11,7 @@ const Contact = () => {
         </h1>
 
         <div className="flex flex-col md:flex-row justify-center items-stretch gap-12 opacity-0 animate-in-2">
-          {/* Contact Information Section */}
+        
           <div className="bg-gray-800 p-8 rounded-xl shadow-2xl flex-1 flex flex-col justify-around">
             <h2 className="text-3xl font-oswald text-teal-400 mb-8 text-center md:text-left">
               Contact Info
@@ -47,7 +47,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Call to Action / Message Section */}
+         
           <div className="bg-gray-800 p-8 rounded-xl shadow-2xl flex-1 flex flex-col justify-center items-center text-center">
             <h2 className="text-4xl font-oswald text-teal-400 mb-6 drop-shadow-lg">
               Coffee With Me
@@ -57,7 +57,7 @@ const Contact = () => {
               discuss ideas, or just have a casual chat about tech, design, or life.
               Feel free to reach out.
             </p>
-            <div className="animate-pulse-slow"> {/* Added pulsing animation */}
+            <div className="animate-pulse-slow"> 
               <a
                 href={`mailto:${MAIL}`}
                 className=" inline-flex items-center justify-center bg-teal-600 text-white font-bebas tracking-wide text-2xl px-8 py-4 rounded-full

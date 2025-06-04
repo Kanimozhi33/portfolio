@@ -23,10 +23,11 @@ setActiveContent(id);
 };
 
 return (
-<div className="bg-black min-h-[730px]  py-16 justify-center items-center  my-auto px-20 transition-all duration-200  ">
+<div className="bg-black min-h-[730px]  py-16 justify-center items-center 
+ my-auto px-20 transition-all duration-200  ">
 <div className="container mx-auto px-4 opacity-0 animate-in-1 md:px-8">
 <div className="flex  flex-col md:flex-row justify-center gap-10">
-{/* Navigation Links */}
+
 <div className="md:w-1/4 flex flex-col items-center ">
 <div className="bg-gray-800 rounded-lg shadow-md p-4 md:p-6 w-full">
 <h2 className="font-bebas text-3xl text-teal-400 mb-4 text-center md:text-left">
@@ -35,25 +36,33 @@ Explore
 <div className="flex flex-col md:text-sm space-y-2 opacity-0 animate-in-2">
 <button
 onClick={() => handleLinkClick("education")}
-className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${ activeContent === "education" ? "bg-teal-500 transition-colors transform duration-300" : "bg-gray-700 hover:bg-gray-600" }`}
+className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 
+${ activeContent === "education" ? "bg-teal-500 transition-colors transform duration-300"
+ : "bg-gray-700 hover:bg-gray-600" }`}
 >
 Education
 </button>
 <button
 onClick={() => handleLinkClick("skills")}
-className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${activeContent === "skills" ? "bg-teal-500 transition-colors transform duration-300" : "bg-gray-700 hover:bg-gray-600"}`}
+className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer
+ text-gray-200 ${activeContent === "skills" ?
+  "bg-teal-500 transition-colors transform duration-300" : "bg-gray-700 hover:bg-gray-600"}`}
 >
 Skills
 </button>
 <button
 onClick={() => handleLinkClick("experience")}
-className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer  text-gray-200 ${ activeContent === "experience" ? "bg-teal-500 transition-colors transform duration-300" : "bg-gray-700 hover:bg-gray-600" }`}
+className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer 
+ text-gray-200 ${ activeContent === "experience" ? "bg-teal-500 transition-colors transform duration-300" : 
+ "bg-gray-700 hover:bg-gray-600" }`}
 >
 Experience
 </button>
 <button
 onClick={() => handleLinkClick("about-me")}
-className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer text-gray-200 ${ activeContent === "about-me" ? "bg-teal-500 transition-colors transform duration-300" : "bg-gray-700 hover:bg-gray-600" }`}
+className={`py-2 px-4 rounded-md text-lg font-semibold cursor-pointer
+ text-gray-200 ${ activeContent === "about-me" ? "bg-teal-500 transition-colors transform duration-300" : 
+ "bg-gray-700 hover:bg-gray-600" }`}
 >
 About Me
 </button>
@@ -61,7 +70,7 @@ About Me
 </div>
 </div>
 
-      {/* Content Area */}
+      
       <div className="md:w-2/4  ">
         {activeContent === "education" && (
           <div id="education" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8 opacity-0 animate-in-2">
@@ -87,43 +96,44 @@ About Me
         )}
 
         {activeContent === "skills" && (
-          <div id="skills" className="content-div bg-gray-800 rounded-lg shadow-md p-6 md:p-8 opacity-0 animate-in-2">
+          <div id="skills" className="content-div bg-gray-800 rounded-lg shadow-md p-6
+           md:p-8 opacity-0 animate-in-2">
             <h2 className="font-oswald text-3xl text-teal-400 font-bold mb-6">My Skills</h2>
             <p className="text-gray-300 text-lg mb-6">My skills include:</p>
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-5xl md:text-6xl">
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
+              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center
+               hover:bg-gray-600 transition duration-300">
                 <TiHtml5 className="text-teal-400" title="HTML 5" />
               </div>
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
+              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center
+               hover:bg-gray-600 transition duration-300">
                 <FaCss3Alt className="text-teal-400" title="CSS 3" />
               </div>
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
+              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center
+               hover:bg-gray-600 transition duration-300">
                 <SiJavascript className="text-teal-400" title="Javascript" />
               </div>
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
+              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center
+               hover:bg-gray-600 transition duration-300">
                 <FaReact className="text-teal-400" title="React" />
               </div>
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
+              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center
+               hover:bg-gray-600 transition duration-300">
                 <SiPython className="text-teal-400" title="Python" />
               </div>
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
+              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center
+               hover:bg-gray-600 transition duration-300">
                 <SiTailwindcss className="text-teal-400" title="tailwindcss" />
               </div>
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
+              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center
+               hover:bg-gray-600 transition duration-300">
                 <BsFiletypeJsx className="text-teal-400" title="JSX" />
               </div>
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
+              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center
+               hover:bg-gray-600 transition duration-300">
                 <SiRedux className="text-teal-400" title="React Redux" />
               </div>
-              {/* <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
-                <SiVite className="text-teal-400" title="Vite" />
-              </div>
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
-                <FaBoxOpen className="text-teal-400" title="Parcel" />
-              </div>
-              <div className="bg-gray-700 rounded-lg p-4 flex items-center justify-center hover:bg-gray-600 transition duration-300">
-                <SiNpm className="text-teal-400" title="NPM" /> */}
-              {/* </div> */}
+             
             </div>
           </div>
         )}
@@ -137,7 +147,7 @@ About Me
               lies in a different field, my passion for creating engaging and functional online experiences
               has led me to actively pursue self-learning in web development.
             </p>
-            {/* You can add more specific experience details here, perhaps as a list or timeline */}
+            
           </div>
         )}
 
