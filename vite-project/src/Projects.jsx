@@ -6,7 +6,11 @@ import ss_3 from "./assets/images/ss_3.png";
 import ss_4 from "./assets/images/ss_4.png";
 import ss_5 from "./assets/images/ss_5.png";
 import ss_6 from "./assets/images/ss_6.png";
-
+import about from "./assets/images/about.png";
+import home from "./assets/images/home.png";
+import menu_1 from "./assets/images/menu_1.png";
+import menu_2 from "./assets/images/menu_2.png";
+import cart from "./assets/images/cart.png";
 import ImageCarousal from "./ImageCarousal";
 
 
@@ -16,11 +20,11 @@ const projectData = {
     description:"This is an Online Food Ordering application",
     techStack:"React, Javascript, Tailwind Css, Redux",
     images:[
-    {id:1, src:ss_1, alt:"Home page"},
-    {id:2, src:ss_2, alt:"Restaurant menu"},
-    {id:3, src:ss_6, alt:"items"},
-    {id:4, src:ss_5, alt:"cart page"},
-    {id:5, src:ss_4, alt:"about page"}
+    {id:1, src:home, alt:"Home page"},
+    {id:2, src:menu_1, alt:"Restaurant menu"},
+    {id:3, src:menu_2, alt:"items"},
+    {id:4, src:cart, alt:"cart page"},
+    {id:5, src:about, alt:"about page"}
 ],
 }
 const Projects = ()=>{
