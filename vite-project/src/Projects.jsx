@@ -1,11 +1,6 @@
 import { FiExternalLink } from "react-icons/fi";
 import { BsGithub } from "react-icons/bs";
-import ss_1 from "./assets/images/ss_1.png";
-import ss_2 from "./assets/images/ss_2.png";
-import ss_3 from "./assets/images/ss_3.png";
-import ss_4 from "./assets/images/ss_4.png";
-import ss_5 from "./assets/images/ss_5.png";
-import ss_6 from "./assets/images/ss_6.png";
+
 import about from "./assets/images/about.png";
 import home from "./assets/images/home.png";
 import menu_1 from "./assets/images/menu_1.png";
