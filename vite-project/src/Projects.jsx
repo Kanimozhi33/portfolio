@@ -38,7 +38,7 @@ const Projects = ()=>{
             
             <div className="text-gray-400 ">
                 <hr className="text-gray-500 opacity-50 text-4xl"></hr>
-                <div className="flex  text-3xl space-x-4 p-8"><a href="https://meal-minit.vercel.app/" ><FiExternalLink /></a>
+                <div className="flex  text-3xl space-x-4 p-8"><FiExternalLink />
                 <a href="https://github.com/Kanimozhi33"><BsGithub /></a></div>
             </div>
 
