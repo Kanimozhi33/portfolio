@@ -82,15 +82,15 @@ About Me
                 Bachelor of Science.(honours) Agriculture - <span className="text-teal-400">85%</span>
               </p>
               <p className="text-gray-400 text-sm mt-1">
-                Agricultural College and Research Institute (TNAU constituent) - Kudumiyanmalai
+                Agricultural College and Research Institute (TNAU constituent) - Kudumiyanmalai.
               </p>
             </div>
             <div className="bg-gray-700 rounded-lg p-5">
               <p className="font-semibold text-xl text-gray-200 mb-2">2018 - 2020</p>
               <p className="text-gray-300 text-lg">
-                Maths and Science - <span className="text-teal-400">89%</span>
+                Maths and Science - <span className="text-teal-400">83.3%</span>
               </p>
-              <p className="text-gray-400 text-sm mt-1">Cordite Factory Hr. Secondary School</p>
+              <p className="text-gray-400 text-sm mt-1">Cordite Factory Hr. Secondary School, Aruvankadu.</p>
             </div>
           </div>
         )}

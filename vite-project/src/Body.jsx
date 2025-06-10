@@ -14,7 +14,7 @@ const Body = () => {
          
           <h1 className="text-xl md:text-2xl">Software Engineer</h1>
           <p className="text-4xl md:text-5xl mt-2">
-            Hello I'm <span className="text-teal-400">Kanimozhi VM</span>
+            Hello I'm <span className="text-teal-400">Kanimozhi V M</span>
           </p>
         </div>
         <div className="text-center text-gray-300 mt-8 md:mt-10 opacity-0 animate-in-3">
