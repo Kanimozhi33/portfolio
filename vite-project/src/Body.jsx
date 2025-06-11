@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { IoMdDownload } from "react-icons/io";
-
+import resume from "./assets/resume.pdf"; // Ensure you have a resume.pdf in the assets folder
 
 
 const Body = () => {
@@ -31,7 +31,7 @@ const Body = () => {
           
         >
           <Link
-            to=""
+            to={resume}
             className="flex items-center text-gray-900
                        hover:scale-105 transform duration-300 ease-in-out"
           >
